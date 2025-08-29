@@ -1,0 +1,22 @@
+/* body{
+    background-color: cadetblue;
+}
+p{
+    background-color: bisque;
+    color: black;
+}
+
+h2{
+    background-color: rgb(0, 200, 255);
+    color: brown;
+} */
+
+#home{
+    background-color: burlywood;
+    color: blue;
+}
+
+.footer{
+    background-color: rgb(218, 192, 243);
+    font-family: 'Times New Roman', Times, serif;
+}
