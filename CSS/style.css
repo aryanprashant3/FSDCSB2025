@@ -20,3 +20,35 @@ h2{
     background-color: rgb(218, 192, 243);
     font-family: 'Times New Roman', Times, serif;
 }
+/* Descendent */
+div~p{
+    background-color: rgb(43, 9, 75);
+    color: yellow;
+}
+
+p:hover{
+    background-color: rgb(48, 193, 212);
+    color: rgb(78, 78, 3);
+    font-size: larger;
+
+}
+
+p::after{
+    content: "ABES Engineering College";
+    background-color: rgb(241, 32, 244);
+}
+
+p::before{
+    content: "We are third year students";
+    background-color: rgb(102, 167, 236);
+}
+
+div p:nth-child(1){
+    background-color: antiquewhite;
+    font-size: xx-small;
+}
+
+div p:nth-of-type(1){
+    background-color:aquamarine;
+    font-size: larger;
+}

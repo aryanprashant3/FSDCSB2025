@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Language Academia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 100px 1fr 40px;
+      height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #3a1c03;
+      color: rgb(159, 209, 227);
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .header-links {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+
+    .header-links a {
+      text-decoration: none;
+      font-size: larger;
+      color: rgb(9, 0, 0);
+      font-weight: bold;
+      padding: 8px 12px;
+      background-color: bisque;
+      border: 1px solid rgb(7, 1, 1);
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .header-links a:hover {
+      background-color: #0de61f;
+      color: rgb(1, 37, 15);
+    }
+
+    nav {
+      grid-area: sidebar;
+      background-color: rgb(123, 46, 5);
+      padding: 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 90px;
+      text-decoration: none;
+      font-size: x-large;
+      color: #f3f30f;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #138ab1;
+    }
+
+    iframe {
+      grid-area: content;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #3a1c03;
+      color: rgb(239, 252, 95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <header>
+    <div class="header-title"><strong>ABES ENGINEERING COLLEGE</strong></div>
+    <div class="header-links">
+      <a href="home.html" target="contentFrame">Home</a>
+      <a href="careers.html" target="contentFrame">Careers</a>
+      <a href="scope.html" target="contentFrame">Scope</a>
+      <a href="roadmap.html" target="contentFrame">Roadmap</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="java.html" target="contentFrame">Java</a>
+    <a href="python.html" target="contentFrame">Python</a>
+    <a href="css.html" target="contentFrame">CSS</a>
+    <a href="javascript.html" target="contentFrame">JavaScript</a>
+  </nav>
+
+  <iframe name="contentFrame" src="welcome.html"></iframe>
+
+  <footer>FSD Assignment 29th August 2025</footer>
+
 </body>
 </html>
