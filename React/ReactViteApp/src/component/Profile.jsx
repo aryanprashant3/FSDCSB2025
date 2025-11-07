@@ -1,12 +1,16 @@
 import React from 'react'
-import './Profile.css';
-function Profile() {
+import './profile.css'
+
+function Profile({data}) {
   return (
     <div className='parent'>
-      <h2>Profile Page</h2>
-      <h3>Name: Aryan</h3>
-      <h3>Branch: CS</h3>
-      <h3>Section: B</h3>
+        <h2>Profile Page</h2>
+        <img src={data.pic} alt="" width={200}/>
+        <h3>Name:{data.myname}</h3>
+        <h3>Branch:{data.mybranch}</h3>
+        <h3>Section:{data.mysection}</h3>
+        <h3>College:{data.mycollege}</h3>
+        
     </div>
   )
 }
